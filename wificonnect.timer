@@ -1,0 +1,9 @@
+[Unit]
+Description=Run wificonnect.service every 2 minutes
+
+[Timer]
+OnBootSec=2min
+OnCalendar=*:0/2
+
+[Install]
+WantedBy=multi-user.target

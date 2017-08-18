@@ -1,0 +1,8 @@
+[Unit]
+Description=spawns wifi connect script to check network and connect if not connected.
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/src/rwc/wificonnect.sh
